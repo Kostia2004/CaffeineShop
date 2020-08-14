@@ -10,7 +10,15 @@
 </head>
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 shadow-sm">
-  <h2 class="my-0 mr-md-auto font-weight-normal"> <a href="#">CaffeineShop</a></h2>
+        <a href="#">
+          {% load static %}
+            <img src="{% static 'css/icon.png' %}" width="35px" height="35px">
+    </a>
+  <h2 class="my-0 mr-md-auto font-weight-normal">
+      <a href="#">
+          CaffeineShop
+      </a>
+  </h2>
   <a class="btn btn-outline-primary" href="#">Sign up</a>
 </div>
 {% block content %}{% endblock %}
