@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% load static %}
+    <link rel="icon" href="{% static 'css/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 shadow-sm">
+  <h2 class="my-0 mr-md-auto font-weight-normal"> <a href="#">CaffeineShop</a></h2>
+  <a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+{% block content %}{% endblock %}
 </body>
 </html>
