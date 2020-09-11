@@ -79,7 +79,11 @@ button:focus {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: 10px !important;
+}
+
+.q {
+  margin: 5px;
 }
 
 @media (min-width: 768px) {
