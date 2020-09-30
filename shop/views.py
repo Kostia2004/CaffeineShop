@@ -6,3 +6,6 @@ def index(request):
 
 def login(request):
     return render(request=request, template_name="shop/login.html")
+
+def singup(request):
+    return render(request=request, template_name="shop/singup.html")
