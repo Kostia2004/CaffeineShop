@@ -10,18 +10,22 @@
     {% block style %}{% endblock %}
 </head>
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 shadow-sm">
-        <a href="{% url 'home' %}">
-          {% load static %}
+<div class="header px-md-4">
+    <a href="{% url 'home' %}">
+    {% load static %}
+        <div class="icon">
             <img src="{% static 'css/icon.png' %}" width="44px" height="35px">
+        </div>
+        <div style="margin-right: 61.2%;" class="icon">
+            <h2 class="mr-md-auto site-name">
+                CaffeineShop
+            </h2>
+        </div>
     </a>
-  <h2 class="my-0 mr-md-auto font-weight-normal">
-      <a href="{% url 'home' %}">
-          CaffeineShop
-      </a>
-  </h2>
-        <a class="btn btn-outline-primary q" href="singup">Sing Up</a>
-        <a class="btn btn-outline-primary q" href="login">Log In</a>
+    <div>
+        <a class="btn" href="singup">Sing Up</a>
+        <a style="margin-left: 5px;" class="btn" href="login">Log In</a>
+    </div>
 </div>
 {% block content %}{% endblock %}
 </body>
