@@ -134,7 +134,7 @@ button:focus {
 	z-index: 0;
 	height: 300px;
 }
-.icon {
+.headers-elem {
     float: left;
     margin-top: 12px;
 }
