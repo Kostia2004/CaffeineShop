@@ -1,0 +1,49 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<div class="form">
+      <div class="tab-content">
+      <div>
+          <h1 style="background: linear-gradient(45deg, #0000FF, #00FF00);
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;">Register</h1>
+
+          <form action="/" method="post">
+
+              <div class="field-wrap">
+                <input class="data-input" type="text" placeholder="Name" required autocomplete="off"/>
+            </div>
+
+              <div class="field-wrap">
+                <input class="data-input" type="text" placeholder="Last name" required autocomplete="off"/>
+            </div>
+
+            <div class="field-wrap">
+                <input class="data-input" type="email" placeholder="Email address" required autocomplete="off"/>
+            </div>
+
+          <div class="field-wrap">
+            <input class="data-input" type="password" placeholder="Password"/>
+          </div>
+
+              <div class="field-wrap">
+            <input class="data-input" type="password" placeholder="Сonfirm password"/>
+          </div>
+
+          <button class="button button-block">Register</button>
+
+          </form>
+
+        </div>
+  </div>
+</div>
+{% endblock %}
